@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obrigado Lindo</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column; /* Centralizar em coluna */
+            background-image: url('img/muitoBemJubileu.jpeg'); /* Substitua pelo caminho da sua imagem */
+            background-size: cover;
+            background-position: center;
+        }
+        .container {
+            font-size: xx-large;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .fade-in {
+            opacity: 0;
+            animation: fadeInAnimation 2s ease-in forwards;
+            margin-bottom: 20px; /* Espaçamento entre cada div */
+        }
+
+        @keyframes fadeInAnimation {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="fade-in">
+            <p>Dinheiro : + 130Pts </p>
+        </div>
+        <div class="fade-in" style="animation-delay: 0.5s;">
+            <p>Admiração pelo coordenador : + 250Pts </p>
+        </div>
+        <div class="fade-in" style="animation-delay: 1s;">
+            <p>Vontade de trabalhar :+ 30Pts</p>
+        </div>
+        <div class="fade-in" style="animation-delay: 1.5s;">
+            <p>Vontade de sair : -350Pts</p>
+        </div>
+        <div class="fade-in" style="animation-delay: 2s;">
+            <p>Obrigado, darei meu melhor!</p>
+        </div>
+    </div>
+    
+</body>
+</html>

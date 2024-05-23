@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AumentoHoje? </title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url(img/ursoMendigo.jpeg);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .container h3 {
+            margin: 0 0 20px 0;
+        }
+        .container button {
+            margin: 5px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 15px;
+        }
+        .botao {
+            position: absolute;
+            transition: all 0.3s ease;
+            background-color: rgb(243, 78, 78);
+        }
+        .sim {
+            background-color: rgb(107, 236, 107);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>Meu coordenador, mereço um aumento ? </h3>
+        <button class="sim" onclick="window.location.href='second.html'">Sim</button>
+        <button class="botao"onmouseover="mudarPosicao()" >Não</button>
+    </div>
+
+    <script>
+        function mudarPosicao() {
+            var botao = document.querySelector('.botao');
+            var novaPosicaoX = Math.random() * (window.innerWidth - botao.offsetWidth);
+            var novaPosicaoY = Math.random() * (window.innerHeight - botao.offsetHeight);
+            
+            botao.style.left = novaPosicaoX + 'px';
+            botao.style.top = novaPosicaoY + 'px';
+        }
+    </script>
+</body>
+</html>
